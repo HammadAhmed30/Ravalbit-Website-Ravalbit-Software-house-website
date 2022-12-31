@@ -566,14 +566,15 @@ html {
 }
 
 .person {
-  margin-inline: auto;
+  width: 480px;
+  // margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: min(100% - 1em, 450px);
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-bottom: 10px;
   background-color: $cardBlack;
 }
@@ -613,9 +614,18 @@ html {
 }
 .main-our-team {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
+  position: relative;
+  // flex-wrap: wrap;
+  width: min(100% - 1em, 500px);
+  // justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-inline: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main-our-team::-webkit-scrollbar {
+  width: 10px;
 }
 .person-links a {
   // display: block;
